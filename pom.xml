@@ -55,6 +55,12 @@
 			</snapshots>
 		</repository>
 	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spout-plugins</id>
+			<url>http://repo.spout.org</url>
+		</pluginRepository>
+	</pluginRepositories>
 
 	<dependencies>
 		<dependency>
