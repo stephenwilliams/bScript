@@ -1,0 +1,6 @@
+name: ${project.name}
+version: ${releaseVersion}
+description: ${project.description}
+author: ${author}
+main: ${mainClass}
+debug: ${debug}
