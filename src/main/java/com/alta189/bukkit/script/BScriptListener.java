@@ -25,7 +25,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.server.PluginEnableEvent;
 
-public class BukkitScriptListener implements Listener {
+public class BScriptListener implements Listener {
 	@EventHandler
 	public void onPluginEnable(PluginEnableEvent event) {
 		EventScanner.scanPlugin(event.getPlugin());

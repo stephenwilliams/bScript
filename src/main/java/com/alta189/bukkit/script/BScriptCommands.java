@@ -27,7 +27,7 @@ import com.alta189.bukkitplug.command.Description;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 
-public class BukkitScriptCommands {
+public class BScriptCommands {
 	@Command
 	@Description("Writes possible events to a file")
 	public void writeEvents(CommandSender sender, CommandContext context) {

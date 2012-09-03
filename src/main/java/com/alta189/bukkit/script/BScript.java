@@ -31,8 +31,8 @@ public class BScript extends BasePlugin {
 	@Override
 	public void enable() {
 		instance = this;
-		getServer().getPluginManager().registerEvents(new BukkitScriptListener(), this);
-		registerCommands(BukkitScriptCommands.class);
+		getServer().getPluginManager().registerEvents(new BScriptListener(), this);
+		registerCommands(BScriptCommands.class);
 		new ScriptManager().loadScripts();
 	}
 
