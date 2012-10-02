@@ -29,10 +29,18 @@ import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Scriptable;
 import org.mozilla.javascript.ScriptableObject;
 
+import org.bukkit.Bukkit;
+
 public class ScriptLoader {
 	public Script loadScript(Context context, Scriptable scope, File file) throws Exception {
 		String contents = FileUtils.readFileToString(file);
 		String name = FilenameUtils.getBaseName(file.getName());
+
+		context.evaluateString(scope, "importPackage(\"org.bukkit\");", name, 1, null);
+
+		if (Bukkit.getPluginManager().getPlugin("Spout") != null) {
+			context.evaluateString(scope, "importPackage(\"org.getspout.spoutapi\"", name, 1, null);
+		}
 
 		context.evaluateString(scope, "var info = {};", name, 1, null);
 		context.evaluateString(scope, contents, name, 1, null);
