@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>bScript - Learn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- The styles -->
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/extra.css" rel="stylesheet">
+  <link href="assets/css/prettify.css" rel="stylesheet">
+  <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="60">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li class="active">
+            <a href="learn.html">Learn</a>
+          </li>
+          <li>
+            <a href="examples.html">Examples</a>
+          </li>
+          <!-- <li>
+            <a href="share.html">Share</a>
+          </li> -->
+        </ul>
+        <a class="brand" href="index.html">bScript</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav" id="sidebar" data-spy="affix">
+          <li>
+            <a href="#javascript"> <i class="icon-chevron-right"></i>
+              Javascript
+            </a>
+          </li>
+          <li>
+            <a href="#hello_world"> <i class="icon-chevron-right"></i>
+              Hello World
+            </a>
+          </li>
+          <li>
+            <a href="#events">
+              <i class="icon-chevron-right"></i>
+              Events
+            </a>
+          </li>
+          <li>
+            <a href="#commands">
+              <i class="icon-chevron-right"></i>
+              Commands
+            </a>
+          </li>
+          <li>
+            <a href="#tasks">
+              <i class="icon-chevron-right"></i>
+              Tasks
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="span9">
+        <section id="javascript" class="top-section">
+          <div class="page-header">
+            <h1>Javascript</h1>
+          </div>
+          <h2>Need to learn Javascript?</h2>
+          <p>
+            The pupose of this site is not to teach you the basics of Javascript. Here are a few good resources that you can use to learn.
+          </p>
+          <ul class="thumbnails">
+            <li class="span4">
+              <div class="thumbnail">
+                <a href="http://codeacademy.com/" target="_newtab"><img src="assets/img/code-academy.png" alt="">
+                <h3 align="center">Code Academy</h3></a>
+              </div>
+            </li>
+            <li class="span1"><div>&nbsp;&nbsp;</div></li>
+            <li class="span4">
+              <div class="thumbnail">
+                <a href="http://codeavengers.com/" target="_newtab"><img src="assets/img/code-avengers.png" alt="">
+                <h3 align="center">Code Avengers</h3></a>
+              </div>
+            </li>
+          </ul>
+          <h2>Setup your workspace!</h2>
+          <p>
+            Your workspace is the enviroment that you program in. Having a good, clean workspace will make you more productive and less likely to mess up. Any text editor will work fine for editing your scripts, but I suggest using either Sublime Text 2 or Notepad++. I (alta189) personally prefer Sublime Text 2. If you want a good
+            tutorial on how to efficiently use ST2 check out <a href="https://tutsplus.com/" target="_newtab">Tuts+</a>&#39; course on &ldquo;<a href="https://tutsplus.com/course/improve-workflow-in-sublime-text-2/" target="_newtab">Perfect Workflow in Sublime Text 2</a>&rdquo;
+          </p>
+          <ul class="thumbnails">
+            <li class="span1"><div>&nbsp;&nbsp;</div></li>
+            <li class="span3">
+              <div class="thumbnail">
+                <a href="http://sublimetext.com/2" target="_newtab"><img src="assets/img/sublime-text-2.png" alt="">
+                <h3 align="center">Sublime Text 2</h3></a>
+              </div>
+            </li>
+            <li class="span1"><div>&nbsp;&nbsp;</div></li>
+            <li class="span3">
+              <div class="thumbnail">
+                <a href="http://notepad-plus-plus.org/" target="_newtab"><img src="assets/img/notepadplusplus.png" alt="">
+                <h3 align="center">Notepad++</h3></a>
+              </div>
+            </li>
+            <li class="span1"><div>&nbsp;&nbsp;</div></li>
+          </ul>
+          <p>
+            You should always test on a non-production server, ideally it should have all of the same plugins and configuration as your production server. You will put any scripts you write in <code>your-server-folder/plugins/bScript/scripts</code>.
+          </p>
+        </section>
+        <section id="hello_world">
+          <div class="page-header">
+            <h1>Hello World</h1>
+          </div>
+          <h2>Your first script!</h2>
+          <p>
+            Now that your work enviroment is set up, lets make your first script! What will it do? Well it will be your traditional <a href="http://en.wikipedia.org/wiki/Hello_world_program" target="_newtab">Hello World</a> program!
+          </p>
+          <p>
+            Don't freak out! Its actually extremely simple! First, create a file in the scripts folder named <code>hello_world.js</code>. In this file put the following in the file: <code>print("Hello, world")</code>. When you start the server, you will see the log entries displayed below.
+              <pre>2012-10-01 04:38:17 [INFO] [bScript] Found 1 scripts in script folder
+2012-10-01 04:38:17 [INFO] [bScript] Loading script 'hello_world.js'
+2012-10-01 04:38:17 [INFO] [bScript] [hello_world.js] Hello, world</pre>
+              As you can see, it loaded the script and then printed out <code>Hello, world</code>. Congratulations, you wrote your first script!
+          </p>
+        </section>
+        <section id="events">
+          <div class="page-header">
+            <h1>Events</h1>
+          </div>
+          <h2>Listen to the server</h2>
+          <p>
+            One of the biggest features of bScript is the fact that it will scan Bukkit and any plugins for Events. This means that no events are hardcoded into bScript meaning that bScript doesn't have to update to new events! It also means that plugins' custom events do not have to be added to bScript. Executing <code>writeevents</code> in the console will get you a list of all of the events. The list will be in <code>plugins/bScript/events.txt</code> and will entries similar to the following.
+            <pre class="pre-small">Full Name: org.bukkit.event.player.PlayerInteractEvent
+Simple Name: PlayerInteractEvent
+
+Full Name: org.bukkit.event.block.NotePlayEvent
+Simple Name: NotePlayEvent
+
+Full Name: org.bukkit.event.entity.CreatureSpawnEvent
+Simple Name: CreatureSpawnEvent
+
+Plugin Event Classes
+####################
+
+Plugin: Spout
+---------------------
+
+Full Name: Spout:org.getspout.spoutapi.event.inventory.InventoryOpenEvent
+Simple Name: Spout:InventoryOpenEvent
+
+Full Name: Spout:org.getspout.spoutapi.event.spout.SpoutCraftEnableEvent
+Simple Name: Spout:SpoutCraftEnableEvent
+Simplest Name: SpoutCraftEnableEvent
+
+Full Name: Spout:org.getspout.spoutapi.event.spout.SpoutcraftBuildSetEvent
+Simple Name: Spout:SpoutcraftBuildSetEvent
+Simplest Name: SpoutcraftBuildSetEvent</pre>
+            For each event you can use any of the names listed. Lets write a simple script that welcomes players to the server. Here is the code:
+            <pre>print("Welcome script loaded!");
+events.on("PlayerJoinEvent", function(event) {
+  event.setJoinMessage("Welcome to the server!");
+})</pre>
+            When you log in, you should see a message saying <code>Welcome to the server!</code>
+          </p>
+        </section>
+        <section id="commands">
+          <div class="page-header">
+            <h1>Commands</h1>
+          </div>
+          <h2>Interact with the server</h2>
+          <p>
+            With bScript adding commands so simple! Lets add a command to send a message to another player on the server.<br /> <span class="label label-info">Heads up!</span> Two things are passed to your command function, the source and the context. The following methods are available for source: isPlayer(), getPlayer(), isConsole(), sendMessage(String message). The following methods are available for the context: getCommand() and getArgs().<br />
+            Here is the source for the message command: 
+            <pre>commands.register("msg", function(source, context) {
+  if (!source.isConsole()) {
+    if (context.getArgs().length < 2) { // If there were two or more args
+      source.getPlayer().sendMessage("Correct usage is /msg [player] your message");
+    } else {
+      var args = context.getArgs();
+      // get the player defined in the args
+      var player = Bukkit.getPlayer(args[0]);
+      if (player != null && player.isOnline()) {
+        var msg = "";
+        for (var i = 1; i < args.length; i++) {
+          msg += args[i] + " ";
+        }
+        player.sendMessage(source.getPlayer().getName() + " says: " + msg);
+      } else {
+        source.getPlayer().sendMessage("Recipient is not online!");
+      }
+    }
+  }
+})
+</pre>
+          You can also add aliases to the command by changing the first line to this <code>commands.register("msg", new Array("test", "send"), function(source, context) {</code>. 
+        </section>
+        <section id="colors">
+          <div class="page-header">
+            <h1>Colors</h1>
+          </div>
+          <h2>Utility functions for colors</h2>
+          <p>
+            There are several functions that you can use to manipulate colors in strings. The available colors are: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE. There are also a few formatting styles, such as MAGIC, BOLD, STRIKETHROUGH, UNDERLINE, and ITALIC. The RESET format/color will reset all color and format. <br />
+            The first function is the color() function. It returns the color or format put in the function. Example: <code>color("RED")</code><br />
+            The second function is the format function. It will return a string with all the color's and formats inserted. To request a color or format, do <code>{{COLOR OR FORMAT}}</code>. Example: <code>format("This word is {{RED}}red{{RESET}} this is {{UNDERLINE}}underlined{{RESET}}")</code><br />
+            You can remove all colors in format by simply calling the function stripColors() on a string. Example: <code>stripColors(myColoredString)</code>.
+          </p>
+        </section>
+        <section id="tasks">
+          <div class="page-header">
+            <h1>Tasks</h1>
+          </div>
+          <h2>Scheduling tasks</h2>
+          <p>
+            One neat feature of Bukkit is the ability to schedule tasks that can be set to repeat or set to run at a later time. bScript has api to allow you schedule tasks. First you need to build a Task. 
+            The Tasks class has several methods that you need to know. The first one is <code>setDelay(TimeBuilder delay)</code>, it allows you to set the delay before running the task. The second is <code>setRepeatDelay(TimeBuilder repeatDelay)</code>, it allows you to set a function to repeat at the delay that you define in the TimeBuilder. The third is <code>setAsync(boolean async)</code>, (<span class="label label-important">Warning</span> this should only be used if you know what an async task is, its for experienced users only) it allows you to set whether or not your task will be run asynchronously. <br />
+            By now you are probably wondering what the TimeBuilder above is and how you can use it. It allows you to set the amount time for each delay or repeat delay. The functions provided are: addTicks(), addSeconds(), addMinutes(), and addHours(). <br />
+            <span class="label label-info">Remember</span> A task with a repeating delay will be executed immediately unless you also set a delay on it. <br />
+            Lets write an example that schedules a repeating notice to the server.
+            <pre>var task = new Task();
+task.setDelay(new TimeBuilder().addSeconds(30));
+task.setRepeatDelay(new TimeBuilder().addMinutes(1).addSeconds(15));
+
+tasks.schedule(task, function() {
+  print("Running the task!");
+  Bukkit.broadcastMessage("Don't forget to show your support by donating to alta189! THANKS!");
+}) </pre> 
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <div id="footer">
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>
+          Developed and maintained by
+          <a href="http://twitter.com/alta189" target="_blank">@alta189</a>
+        </p>
+        <p>
+          Code licensed under the
+          <a href="https://github.com/alta189/bScript/blob/master/LICENSE.txt" target="_blank">GNU GENERAL PUBLIC LICENSE v3</a>
+        </p>
+        <ul class="footer-links">
+          <li>
+            <a href="https://github.com/alta189/bScript/issues?state=open">Submit issues</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="assets/js/widgets.js"></script>
+  <script src="assets/js/prettify.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/application.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {  
+      //$("#sidebar").scrollspy();
+    });  
+  </script>
+</body>
+
+</html>
