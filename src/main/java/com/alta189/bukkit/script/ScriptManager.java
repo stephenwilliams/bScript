@@ -34,6 +34,7 @@ import com.alta189.bukkit.script.tasks.TimeBuilder;
 import com.alta189.bukkit.script.util.FileList;
 
 import org.mozilla.javascript.Context;
+import org.mozilla.javascript.ImporterTopLevel;
 import org.mozilla.javascript.Scriptable;
 import org.mozilla.javascript.ScriptableObject;
 
@@ -56,7 +57,7 @@ public class ScriptManager {
 
 	public void loadScripts() {
 		Context context = Context.enter();
-		Scriptable mainScope = context.initStandardObjects();
+		Scriptable mainScope = new ImporterTopLevel(context);
 		context.getWrapFactory().setJavaPrimitiveWrap(false);
 
 		// Set up functions

@@ -36,10 +36,10 @@ public class ScriptLoader {
 		String contents = FileUtils.readFileToString(file);
 		String name = FilenameUtils.getBaseName(file.getName());
 
-		context.evaluateString(scope, "importPackage(\"org.bukkit\");", name, 1, null);
+		context.evaluateString(scope, "importPackage(org.bukkit);", name, 1, null);
 
 		if (Bukkit.getPluginManager().getPlugin("Spout") != null) {
-			context.evaluateString(scope, "importPackage(\"org.getspout.spoutapi\"", name, 1, null);
+			context.evaluateString(scope, "importPackage(org.getspout.spoutapi);", name, 1, null);
 		}
 
 		context.evaluateString(scope, "var info = {};", name, 1, null);

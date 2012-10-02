@@ -6,7 +6,7 @@
 	<name>bScript</name>
 	<groupId>com.alta189.bukkit</groupId>
 	<artifactId>script</artifactId>
-	<version>1.2.0-SNAPSHOT</version>
+	<version>1.1.12</version>
 	<description>Scripting plugin for Bukkit</description>
 	<url>http://github.com/alta189/bScript</url>
 	<inceptionYear>2012</inceptionYear>
