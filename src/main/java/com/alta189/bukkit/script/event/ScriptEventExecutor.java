@@ -35,9 +35,7 @@ public class ScriptEventExecutor implements EventExecutor {
 
 	@Override
 	public void execute(Listener listener, Event event) throws EventException {
-		System.out.println("HANDLING EVENT: " + event.getEventName());
 		if (listener instanceof ScriptEventListener) {
-			System.out.println("It is a ScriptEventListener");
 			ScriptEventListener scriptListener = CastUtil.safeCast(listener);
 			scriptListener.onEvent(event);
 		}

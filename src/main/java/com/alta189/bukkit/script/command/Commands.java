@@ -42,10 +42,6 @@ public class Commands {
 		register(command, null, executor);
 	}
 
-	/*public void jsFunction_r(String command) {
-		System.out.println(command);
-	}*/
-
 	public void register(String command, String[] aliases, ScriptCommandExecutor executor) {
 		ScriptCommand cmd = new ScriptCommand(command);
 		cmd.setExecutor(executor);
