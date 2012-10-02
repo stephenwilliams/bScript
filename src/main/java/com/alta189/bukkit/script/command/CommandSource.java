@@ -32,7 +32,7 @@ public class CommandSource {
 		this.sender = sender;
 	}
 
-	private boolean isPlayer() {
+	public boolean isPlayer() {
 		return sender instanceof Player;
 	}
 
@@ -40,7 +40,7 @@ public class CommandSource {
 		return CastUtil.safeCast(sender);
 	}
 
-	private boolean isConsole() {
+	public boolean isConsole() {
 		return sender instanceof ConsoleCommandSender;
 	}
 
